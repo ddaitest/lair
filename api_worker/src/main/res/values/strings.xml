@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">API_Worker</string>
+    <string name="test">Hello World!</string>
 </resources>
