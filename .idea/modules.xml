@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/api_worker/api_worker.iml" filepath="$PROJECT_DIR$/api_worker/api_worker.iml" />
       <module fileurl="file://$PROJECT_DIR$/constraintlayout/constraintlayout.iml" filepath="$PROJECT_DIR$/constraintlayout/constraintlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/lair.iml" filepath="$PROJECT_DIR$/lair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny/sunny.iml" filepath="$PROJECT_DIR$/sunny/sunny.iml" />
     </modules>
   </component>
 </project>

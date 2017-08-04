@@ -19,30 +19,30 @@ android {
         }
     }
 
-    flavorDimensions "color", "channel"
+    //flavorDimensions "color", "channel"
 
-    productFlavors {
-        //define color's flavors
-        red {
-            dimension "color"
-            versionNameSuffix "-red"
-        }
-
-        gray {
-            dimension "color"
-            versionNameSuffix "-gray"
-        }
-        //define channel's flavors
-        baidu {
-            dimension "channel"
-            versionNameSuffix "-baidu"
-        }
-
-        xiaomi {
-            dimension "channel"
-            versionNameSuffix "-xiaomi"
-        }
-    }
+//    productFlavors {
+//        //define color's flavors
+//        red {
+//            dimension "color"
+//            versionNameSuffix "-red"
+//        }
+//
+//        gray {
+//            dimension "color"
+//            versionNameSuffix "-gray"
+//        }
+//        //define channel's flavors
+//        baidu {
+//            dimension "channel"
+//            versionNameSuffix "-baidu"
+//        }
+//
+//        xiaomi {
+//            dimension "channel"
+//            versionNameSuffix "-xiaomi"
+//        }
+//    }
 
 //    variantFilter { variant ->
 //        def names = variant.flavors*.name
@@ -60,4 +60,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile project(':sunny')
 }
