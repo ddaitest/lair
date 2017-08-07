@@ -2,7 +2,7 @@
 layout: post
 title:  "Android Multi Flavors"
 date:   2017-08-04 10:37:55 +0800
-categories: Android Build Flavors
+
 ---
 ## 介绍
 依靠gradle flavors。在构建apk时候，选择生成不同样式的apk。
