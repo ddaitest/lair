@@ -55,4 +55,4 @@ freeline/
 freeline_project_description.json
 
 #jekyll
-_site
+_site/
