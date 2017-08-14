@@ -9,6 +9,7 @@ import com.facebook.stetho.Stetho;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
@@ -43,12 +44,47 @@ public class MainActivity extends AppCompatActivity {
                 }.start();
             }
         });
+
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                test1(1000);
+            }
+        });
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                test2(1000);
+            }
+        });
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                test2(2000);
+            }
+        });
     }
+
+    ArrayList<Ball> objects = new ArrayList<>();
+
+    public void test1(int x) {
+        for (int i = x; i > 0; i--) {
+            objects.add(new Ball(String.valueOf(i)));
+        }
+    }
+
+    public void test2(int x) {
+        ArrayList<Object> temp = new ArrayList<>();
+        for (int i = x; i > 0; i--) {
+            temp.add(new Ball(String.valueOf(i)));
+        }
+    }
+
 
     public void test(String url) {
 
         Request request = new Request.Builder()
-                .url(url).addHeader("Connection","close")
+                .url(url).addHeader("Connection", "close")
                 .build();
         client.newCall(request).enqueue(new Callback() {
             @Override
@@ -61,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     String responseString = response.body().string();
                     Log.d("DDAI", "onResponse=" + responseString.length());
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

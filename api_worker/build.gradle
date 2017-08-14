@@ -10,7 +10,6 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-
     }
     buildTypes {
         release {
@@ -19,7 +18,7 @@ android {
         }
     }
 
-    //flavorDimensions "color", "channel"
+//    flavorDimensions "channel","color"
 
 //    productFlavors {
 //        //define color's flavors
@@ -32,6 +31,13 @@ android {
 //            dimension "color"
 //            versionNameSuffix "-gray"
 //        }
+//
+//        black {
+//            dimension "color"
+//            versionNameSuffix "-black"
+//        }
+//
+//
 //        //define channel's flavors
 //        baidu {
 //            dimension "channel"
